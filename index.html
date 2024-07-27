@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>EuphoriaFashions.com</title>
+  </head>
+  <body>
+
+<!-- 
+============
+Nav bar
+============
+ -->
+    
+ <header class="header" id="header">
+    <div class="navigation">
+        <div class="nav-center container d-flex">
+            <a href="/" class="logo"><img src="images/Logo.svg" alt="Logo"></a>
+            <ul class="nav-list d-flex">
+                <li class="nav-item"><a href="index.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link">Men</a></li>
+                <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Combos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item search-box">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                    <input type="text" id="search-input" placeholder="Search...">
+                </li>
+                <li class="icons d-flex">
+                    <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
+                    <div class="icon"><i class="bx bx-heart"></i><span class="d-flex">0</span></div>
+                    <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex">0</span></a>
+                </li>
+            </ul>
+            <div class="icons d-flex">
+                <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
+                <div class="icon"><i class="bx bx-heart"></i><span class="d-flex">0</span></div>
+                <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex">0</span></a>
+            </div>
+            <div class="hamburger"><i class="bx bx-menu-alt-left"></i></div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Section -->
+<section id="hero">
+    <div id="main">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" style="background-image: url('images/new1.webp');"></div>
+                <div class="carousel-item" style="background-image: url('images/men1.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('images/new6.jpg');"></div>
+            </div>
+            <div class="overlay-content">
+                <h3>T-Shirt / Tops</h3>
+                <br>
+                <h1>Summer<br>Value Pack</h1>
+                <br>
+                <h3>cool / colorful / comfy</h3>
+                <br>
+                <button class="cta-button">Shop Now</button>
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Yell-Voil Section -->
+<section id="third">
+    <div class="left-section">
+           <div class="container1">
+            <div class="overlay-content">
+                <h5>Low Price</h5>
+                <br>
+                <h1>High Coziness</h1>
+                <p>UPTO 50% OFF</p>
+                <br>
+                <a href="#">Explore Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="container2">
+            <div class="overlay-content">
+                <h5>Beyoung Presents</h5>
+                <br>
+                <h1>Breezy Summer<br>Style</h1>
+                <p>UPTO 50% OFF</p>
+                <br>
+                <a href="#">Explore Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Arrival Section -->
+<section id="gallery">
+    <div class="gallery-content">
+        <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line1"> New Arrival</span>
+        <div class="gallery-carousel">
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="images2/active.jpg" alt="Gallery Image 1">
+                    <p>Knitted Joggers</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-2.jpg" alt="Gallery Image 2">
+                    <p>Urban Shirts</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-3.jpg" alt="Gallery Image 3">
+                    <p>Full Sleeve</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-4.jpg" alt="Gallery Image 4">
+                    <p>Active T-Shirts</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/active.jpg" alt="Gallery Image 1">
+                    <p>Knitted Joggers</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-2.jpg" alt="Gallery Image 2">
+                    <p>Urban Shirts</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-3.jpg" alt="Gallery Image 3">
+                    <p>Full Sleeve</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2/img-4.jpg" alt="Gallery Image 4">
+                    <p>Active T-Shirts</p>
+                </div>
+            </div>
+            <button class="gallery-prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="gallery-next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Left-Right Section -->
+<section id="new-section">
+    <div class="new-section-content">
+        <div class="left-side">
+            <div class="background-content">
+                <h1>WE MADE YOUR EVERYDAY<br> FASHION BETTER!</h1>
+                <br><br>
+                <p>In our journey to improve everyday fashion,<br><br>euphoria presents EVERYDAY wear range -<br><br>Comfortable & Affordable fashion 24/7</p>
+                <br>
+                <br><br><button class="cta-button">Shop Now</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="images/yell.png" alt="Right Side Image">
+        </div>
+    </div>
+</section>
+
+<!-- Men-Women Section -->
+<section id="comp-new-section">
+    <div class="comp-new-section-content" id="comp-new-section-content"></div>
+    <h3 id="comp-new-error" style="display:none;">No Stock Found</h3>
+</section>
+
+
+<!-- 
+==============
+Brand Deals
+==============
+ -->
+
+<section id="back" >
+  <div class="back-content">
+      <h1>Top Brand Deal</h1>
+      <p class="in">Up To <span class="int">60%</span> off on brands</p>
+      <div class="back-images">
+          <div class="back-image">
+              <img src="bgs/nik.png" alt="Image 1">
+          </div>
+          <div class="back-image">
+              <img src="bgs/hm.png" alt="Image 2">
+          </div>
+          <div class="back-image">
+              <img src="bgs/us.png" alt="Image 3">
+          </div>
+          <div class="back-image">
+              <img src="bgs/lvs.png" alt="Image 4">
+          </div>
+          <div class="back-image">
+              <img src="bgs/pum.png" alt="Image 5">
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- 
+=================
+In the Limelight
+=================
+ -->
+
+ <section id="wish">
+    <div class="wish-content">
+      <span>
+        <img src="bgs/Rectangle 21 voil.png" alt="line" class="line3"> In The Limelight
+      </span>
+      <!-- The wish-row will be dynamically populated by JavaScript -->
+      <div class="wish-row"></div>
+      <h3 id="wish-error" style="display:none;">No Stock Found</h3>
+    </div>
+  </section>
+
+
+
+<!-- 
+========
+Feedback
+========
+ -->
+
+<section id="feed">
+  <div class="feed-content">
+      <span><img src="bgs/Rectangle 21 voil.png" alt="line" class="line4"> Feedback</span>
+      <div class="feed-row">
+          <div class="feed-column">
+              <div class="profile-image">
+                  <img src="bgs/pro1.svg" alt="Profile 1">
+              </div>
+              <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h2>Floyd Miles</h2>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                  Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua <br>dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+          <div class="feed-column">
+              <div class="profile-image">
+                  <img src="bgs/pro2.png" alt="Profile 2">
+              </div>
+              <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  
+              </div>
+              <h2>Ronald Richards</h2>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua <br>dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+          <div class="feed-column">
+              <div class="profile-image">
+                  <img src="bgs/pro3.png" alt="Profile 3">
+              </div>
+              <div class="ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                
+              </div>
+              <h2>Savannah Nguyen</h2>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua<br> dolor do amet sint. Velit officia consequat duis enim velit<br> mollit. <br>
+                  Exercitation veniam consequat sunt nostrud amet. Amet <br>minim mollit non deserunt ullamco est sit aliqua dolor do<br> amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- 
+========
+footer
+========
+ -->
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-columns">
+          <div class="footer-column">
+              <ul>
+                  <li><h1>Need Help</h1></li>
+                  <li><p>Contact Us</p></li>
+                  <li><p>Track Order</p></li>
+                  <li><p>Returns & Refunds</p></li>
+                  <li><p>FAQ's</p></li>
+                  <li><p>Career</p></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <ul>
+                  <li><h1>Company</h1></li>
+                  <li><p>About Us</p></li>
+                  <li><p>euphoria Blog</p></li>
+                  <li><p>euphoriastan</p></li>
+                  <li><p>Collaboration</p></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <ul>
+                  <li><h1>More Info</h1></li>
+                  <li><p>Term and Conditions</p></li>
+                  <li><p>Privacy Policy</p></li>
+                  <li><p>Shipping Policy</p></li>
+                  <li><p>Sitemap</p></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <ul>
+                  <li><h1>Location</h1></li>
+                  <li><p>support@euphoria.in</p></li>
+                  <li><p>Eklingpura Chouraha, Ahmedabad Main Road</p></li>
+                  <li><p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p></li>
+                  
+              </ul>
+          </div>
+      </div>
+      <div class="footer-social-media">
+          <div class="social-icons">
+              <a href="https://github.com/sakthi637"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Sakthish63?s=09"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/s_akthi_z?igsh=dzc4N3diaTFqeG93"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sakthish-s-9a0089241"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer-info">
+              <h1>Download The App</h1>
+              <div class="info-columns">
+                  <div class="info-column">
+                      <img src="bgs/ggl.png" alt="Image 1">
+                     
+                  </div>
+                  <div class="info-column">
+                      <img src="bgs/playstore.png" alt="Image 2">
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-category">
+          <select>
+              <option value="category1">Popular Categories</option>
+              <option value="category2">Category 2</option>
+              <option value="category3">Category 3</option>
+              <option value="category4">Category 4</option>
+          </select>
+      </div>
+      <div class="footer-copyright">
+          <p>&copy; Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+<!-- 
+========
+popup
+========
+ -->
+
+  <div class="popup hide-popup">
+    <div class="popup-content">
+      <div class="popup-close">
+        <i class='bx bx-x'></i>
+      </div>
+      <div class="popup-left">
+        <div class="popup-img-container">
+          <img class="popup-img" src="./images/pop1.jpg" alt="popup">
+        </div>
+      </div>
+      <div class="popup-right">
+        <div class="right-content">
+          <h1>Get Discount <span>50%</span> Off</h1>
+          <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="popup-form">
+            <a href="#">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="./js/sample.js"></script>
+  <script src="./js/sample2.js"></script>
+  <script src="./js/slider.js"></script>
+  <!-- <script src="./js/index.js"></script>  -->
+  <script src="./js/script.js"></script> 
+</html>

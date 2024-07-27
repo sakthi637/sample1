@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Joggers",
+      "price": 150,
+      "discount": 67,
+      "img": "./bgs/acti.png",
+      "link": "joggers.html"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Polo T-Shirts",
+      "price": 100,
+      "discount": 43,
+      "img": "./images2/polo.jpg",
+      "link": "#"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Printed T-Shirts",
+      "price": 97,
+      "discount": 0,
+      "img": "./bgs/print.png",
+      "link": "#"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Plain T-Shirts",
+      "price": 84,
+      "discount": 56,
+      "img": "./bgs/plain.png",
+      "link": "#"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Jeans",
+      "price": 180,
+      "discount": 40,
+      "img": "./bgs/jeans.png",
+      "link": "#"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Boxers",
+      "price": 37,
+      "discount": 0,
+      "img": "./bgs/box.png",
+      "link": "#"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Hoodies",
+      "price": 168,
+      "discount": 39,
+      "img": "./bgs/hood.png",
+      "link": "#"
+    },
+    {
+      "category": "MEN'S CLOTHES",
+      "title": "Shirts",
+      "price": 133,
+      "discount": 0,
+      "img": "./bgs/shirt.png",
+      "link": "#"
+    }
+  ]
+}

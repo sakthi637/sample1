@@ -1,0 +1,28 @@
+[
+    {
+      "img": "bgs/wit.png",
+      "title": "Black Sweartshirt",
+      "brand": "Jhanvi's Brand",
+      "price": "$123.00"
+    },
+    {
+      "img": "bgs/peach.png",
+      "title": "Line Pattern Black",
+      "brand": "AS's Brand",
+      "price": "$37.00"
+    },
+    {
+      "img": "bgs/orange.png",
+      "title": "Black Shorts",
+      "brand": "MM's Brand",
+      "price": "$39.00"
+    },
+    {
+      "img": "bgs/pink.png",
+      "title": "Levender Hoodie",
+      "brand": "Nike's Brand",
+      "price": "$119.00"
+    }
+  
+]
+  

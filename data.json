@@ -1,0 +1,25 @@
+[
+    {
+      "category": "Men",
+      "items": [
+        { "img": "bgs/shirt.png", "title": "Shirts", "link": "#" },
+        { "img": "bgs/print.png", "title": "Printed T-Shirts", "link": "#" },
+        { "img": "bgs/plain.png", "title": "Plain T-Shirts", "link": "#" },
+        { "img": "images2/polo.jpg", "title": "Polo T-Shirt", "link": "#" },
+        { "img": "bgs/hood.png", "title": "Hoodies & Sweetshirt", "link": "#" },
+        { "img": "bgs/jeans.png", "title": "Jeans", "link": "#" },
+        { "img": "bgs/acti.png", "title": "Activewear", "link": "#" },
+        { "img": "bgs/box.png", "title": "Boxers", "link": "#" }
+      ]
+    },
+    {
+      "category": "Women",
+      "items": [
+        { "img": "bgs/womn1.png", "title": "Hoodies & Sweetshirt", "link": "#" },
+        { "img": "bgs/womn2.png", "title": "Coats & Parkas", "link": "#" },
+        { "img": "bgs/womn3.png", "title": "Tees & T-Shirt", "link": "#" },
+        { "img": "bgs/womn4.png", "title": "Boxers", "link": "#" }
+      ]
+    }
+  ]
+  
