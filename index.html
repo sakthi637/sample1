@@ -40,27 +40,44 @@ Nav bar
                 <li class="nav-item"><a href="index.html" class="nav-link">Shop</a></li>
                 <li class="nav-item"><a href="product.html" class="nav-link">Men</a></li>
                 <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Combos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item search-box">
+                <li class="nav-item"><a href="#about" class="nav-link">Combos</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <div class="search-box">
                     <button id="search-button"><i class="fas fa-search"></i></button>
                     <input type="text" id="search-input" placeholder="Search...">
-                </li>
-                <li class="icons d-flex">
-                    <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
-                    <div class="icon"><i class="bx bx-heart"></i><span class="d-flex">0</span></div>
-                    <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex">0</span></a>
-                </li>
+                </div>
             </ul>
             <div class="icons d-flex">
                 <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
-                <div class="icon"><i class="bx bx-heart"></i><span class="d-flex">0</span></div>
-                <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex">0</span></a>
+                <div class="icon">
+                    <i class="bx bx-heart wish-icon-header"></i>
+                    <span class="d-flex" id="wish-count">0</span>
+                </div>
+                <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex" id="cart-count">0</span></a>
             </div>
             <div class="hamburger"><i class="bx bx-menu-alt-left"></i></div>
         </div>
+        <!-- Cart items container -->
+        <div class="cart-items-container" id="cart-items-container" style="display: none;">
+            <h2>Cart Items</h2>
+            <div id="cart-items"></div>
+            <div>Total Amount: <span id="total-amount">$0.00</span></div>
+            <div class="cart-actions">
+                <button id="close-cart" class="close-cart">Close</button>
+                <button id="checkout" class="checkout">Checkout</button>
+            </div>
+        </div>
+        <!-- Wishlist items container -->
+        <div class="wishlist-items-container" id="wishlist-items-container" style="display: none;">
+            <h2>Wishlist Items</h2>
+            <div id="wishlist-items"></div>
+            <div class="wishlist-actions">
+                <button id="close-wishlist" class="close-wishlist">Close</button>
+            </div>
+        </div>
     </div>
 </header>
+
 
 <!-- Main Section -->
 <section id="hero">
@@ -417,4 +434,6 @@ popup
   <script src="./js/slider.js"></script>
   <script src="./js/index.js"></script> 
   <script src="./js/script.js"></script> 
+  <!-- <script src="./js/script2.js"></script>  -->
+  <!-- <script src="./js/samp.js"></script>  -->
 </html>

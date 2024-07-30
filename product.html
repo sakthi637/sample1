@@ -29,7 +29,11 @@
           </ul>
           <div class="icons d-flex">
             <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
-            <div class="icon"><i class="bx bx-heart"></i><span class="d-flex" id="wish-count">0</span></div>
+            <div class="icon">
+              <i class="bx bx-heart wish-icon-header"></i>
+              <span class="d-flex" id="wish-count">0</span> <!-- Wish count element -->
+            </div>
+            
             <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex" id="cart-count">0</span></a>
           </div>
           <div class="hamburger"><i class="bx bx-menu-alt-left"></i></div>
@@ -44,10 +48,16 @@
             <button id="checkout" class="checkout">Checkout</button>
           </div>
         </div>
-        
+        <!-- Wishlist items container -->
+        <div class="wishlist-items-container" id="wishlist-items-container" style="display: none;">
+          <h2>Wishlist Items</h2>
+          <div id="wishlist-items"></div>
+          <div class="wishlist-actions">
+            <button id="close-wishlist" class="close-wishlist">Close</button>
+          </div>
+        </div>
       </div>
     </header>
-    
     
     <!-- Men's Collection -->
     <section class="section all-products" id="products">

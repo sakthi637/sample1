@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
 
     // Load JSON data for products
-    fetch('products.json')
+    fetch('womens-products.json')
       .then(response => response.json())
       .then(data => {
-        originalProductData = data.products; // Store the original product data
+        originalProductData = data.products;
         displayProducts(originalProductData);
       })
       .catch(error => console.error('Error fetching products:', error));
@@ -54,54 +54,50 @@ document.addEventListener('DOMContentLoaded', () => {
             <h4>$${item.price}</h4>
           </div>
           <ul class="icons">
-            <li><i class="bx bx-heart sakthi3" data-title="${item.title}" data-price="${item.price}" data-img="${item.img}" data-link="${item.link}"></i></li>
+            <li><i class="bx bx-heart sakthi3" data-title="${item.title}" data-price="${item.price}" data-img="${item.img}"></i></li>
             <li><i class="bx bx-search"></i></li>
-            <li><i class="bx bx-cart cart-icon" data-title="${item.title}" data-price="${item.price}" data-img="${item.img}" data-link="${item.link}"></i></li>
+            <li><i class="bx bx-cart cart-icon" data-title="${item.title}" data-price="${item.price}" data-img="${item.img}"></i></li>
           </ul>
         `;
         productCenter.appendChild(productItem);
       });
 
-      // Add event listeners to cart icons
       const cartIcons = document.querySelectorAll('.cart-icon');
       cartIcons.forEach(icon => {
         icon.addEventListener('click', function() {
           const title = icon.getAttribute('data-title');
           const price = parseFloat(icon.getAttribute('data-price'));
           const img = icon.getAttribute('data-img');
-          const link = icon.getAttribute('data-link');
-          addToCart(title, price, img, link);
+          addToCart(title, price, img);
         });
       });
 
-      // Add event listeners to wishlist icons
       const wishIcons = document.querySelectorAll('.sakthi3');
       wishIcons.forEach(icon => {
         icon.addEventListener('click', function() {
           const title = icon.getAttribute('data-title');
           const price = parseFloat(icon.getAttribute('data-price'));
           const img = icon.getAttribute('data-img');
-          const link = icon.getAttribute('data-link');
-          addToWishlist(title, price, img, link);
+          addToWishlist(title, price, img);
         });
       });
     }
 
-    function addToCart(title, price, img, link) {
+    function addToCart(title, price, img) {
       const existingItem = cartItems.find(item => item.title === title);
       if (existingItem) {
         existingItem.quantity++;
       } else {
-        cartItems.push({ title, price, img, quantity: 1, link});
+        cartItems.push({ title, price, img, quantity: 1 });
       }
       updateCart();
       saveCartToLocalStorage();
     }
 
-    function addToWishlist(title, price, img, link) {
+    function addToWishlist(title, price, img) {
       const existingItem = wishlistItems.find(item => item.title === title);
       if (!existingItem) {
-        wishlistItems.push({ title, price, img, link });
+        wishlistItems.push({ title, price, img });
         updateWishlist();
         saveWishlistToLocalStorage();
       }
@@ -124,8 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
         cartItem.innerHTML = `
-        <a href="${item.link}">
-          <img src="${item.img}" alt="${item.title}"></a>
+          <img src="${item.img}" alt="${item.title}">
           <div class="cart-item-details">
             <h4>${item.title}</h4>
             <p>$${item.price} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}</p>
@@ -139,7 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItemsDiv.appendChild(cartItem);
       });
 
-      // Add event listeners for increase/decrease buttons
       const decreaseButtons = document.querySelectorAll('.decrease-quantity');
       const increaseButtons = document.querySelectorAll('.increase-quantity');
 
@@ -157,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-      // Calculate and display total amount
       updateTotalAmount();
     }
 
@@ -201,8 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const wishlistItem = document.createElement('div');
         wishlistItem.className = 'wishlist-item';
         wishlistItem.innerHTML = `
-        <a href="${item.link}">
-          <img src="${item.img}" alt="${item.title}"></a>
+          <img src="${item.img}" alt="${item.title}">
           <div class="wishlist-item-details">
             <h4>${item.title}</h4>
             <p>$${item.price}</p>
@@ -214,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
         wishlistItemsDiv.appendChild(wishlistItem);
       });
 
-      // Add event listeners for remove buttons
       const removeButtons = document.querySelectorAll('.remove-wishlist-item');
       removeButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -230,19 +221,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleSearch() {
       const searchTerm = searchInput.value.toLowerCase();
-
-      // If the search input is empty, do nothing
       if (searchTerm.trim() === '') {
         return;
       }
-
-      // Filter products based on the search term
       const filteredProducts = originalProductData.filter(item =>
         item.title.toLowerCase().includes(searchTerm) ||
         item.category.toLowerCase().includes(searchTerm)
       );
-
-      // Display filtered products or show an alert if no matches are found
       if (filteredProducts.length > 0) {
         displayProducts(filteredProducts);
       } else {
@@ -281,7 +266,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutButton.addEventListener('click', () => {
-      alert('Proceeding to checkout');
+      alert('Thank you for your purchase!');
+      cartItems = [];
+      updateCart();
+      saveCartToLocalStorage();
+      cartItemsContainer.style.display = 'none';
     });
 
     loadCartFromLocalStorage();

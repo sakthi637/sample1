@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Hoodies",
+      "price": 150,
+      "discount": 67,
+      "img": "./bgs/womn1.png",
+      "link": "productDetails.html"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Coats & Parkas",
+      "price": 100,
+      "discount": 43,
+      "img": "./bgs/womn2.png",
+      "link": "#"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Tees & T-Shirt",
+      "price": 97,
+      "discount": 0,
+      "img": "./bgs/womn3.png",
+      "link": "#"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Boxers",
+      "price": 46,
+      "discount": 56,
+      "img": "./bgs/womn4.png",
+      "link": "#"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Frock",
+      "price": 180,
+      "discount": 40,
+      "img": "./bgs/womn5.jpg",
+      "link": "#"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Western Wear",
+      "price": 96,
+      "discount": 0,
+      "img": "./bgs/womn6.jpg",
+      "link": "#"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Kurta",
+      "price": 168,
+      "discount": 39,
+      "img": "./bgs/womn7.jpg",
+      "link": "#"
+    },
+    {
+      "category": "WOMEN'S CLOTHES",
+      "title": "Skirts",
+      "price": 133,
+      "discount": 0,
+      "img": "./bgs/womn8.jpg",
+      "link": "#"
+    }
+  ]
+}
