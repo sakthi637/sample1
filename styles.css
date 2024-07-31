@@ -204,7 +204,7 @@ Navigation
 
   .nav-list {
     position: fixed;
-    top: 5rem;
+    top: 7rem;
     left: 100%;
     width: 50%;
     flex-direction: column;
@@ -4826,6 +4826,11 @@ body {
     width: 100%;
 }
 
+.payment-left-panel {
+  width: 99%;
+  margin: 0 auto;
+}
+
 
   h3 {
       font-size: 14px;
@@ -4842,6 +4847,12 @@ body {
       margin-top: 15%;
       width: 100%;
   }
+
+  .payment-left-panel {
+    width: 99%;
+    margin: 0 auto;
+  }
+  
  
 
   h3 {
