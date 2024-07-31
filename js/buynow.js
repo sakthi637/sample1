@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('.new-address-form');
+    const form = document.querySelector('.buynow-new-address-form');
     const inputs = form.querySelectorAll('input[type="text"]');
     const phoneInput = form.querySelector('input[placeholder="10-digit mobile number"]');
     const pincodeInput = form.querySelector('input[placeholder="Pincode"]');
@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const addressInput = form.querySelector('input[placeholder="Address (Area and Street)"]');
     const cityInput = form.querySelector('input[placeholder="City/District/Town"]');
 
-    const currentLocationBtn = form.querySelector('.current-location-btn');
-    const saveBtn = form.querySelector('.save-btn');
-    const cancelBtn = form.querySelector('.cancel-btn');
-    const changeBtn = document.querySelector('#login-section button');
-    const viewAllBtn = document.querySelector('.view-all-btn');
+    const currentLocationBtn = form.querySelector('.buynow-current-location-btn');
+    const saveBtn = form.querySelector('.buynow-save-btn');
+    const cancelBtn = form.querySelector('.buynow-cancel-btn');
+    const changeBtn = document.querySelector('#buynow-login-section button');
+    const viewAllBtn = document.querySelector('.buynow-view-all-btn');
 
     function validatePhoneNumber(phone) {
         return /^\d{10}$/.test(phone);
@@ -60,18 +60,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (isValid) {
-            showAlert('Address saved successfully!');
-            form.reset();
+            window.location.href = 'conform.html';
         }
     });
 
     currentLocationBtn.addEventListener('click', function (e) {
         e.preventDefault();
         showAlert('Using current location.');
-    });
-
-    saveBtn.addEventListener('click', function () {
-        showAlert('Saving address...');
     });
 
     cancelBtn.addEventListener('click', function (e) {
@@ -86,5 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     viewAllBtn.addEventListener('click', function () {
         showAlert('Viewing all addresses.');
+    });
+
+    saveBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        form.dispatchEvent(new Event('submit'));
     });
 });

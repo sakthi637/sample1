@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navigation">
+            <div class="nav-center container d-flex">
+                <a href="/" class="logo"><img src="images/Logo.svg" alt="Logo"></a>
+                <ul class="nav-list d-flex">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="product.html" class="nav-link">Men</a></li>
+                    <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Combos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <div class="search-box">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                        <input type="text" id="search-input" placeholder="Search...">
+                    </div>
+                </ul>
+                <div class="icons d-flex">
+                    <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
+                    <div class="icon">
+                        <i class="bx bx-heart wish-icon-header"></i>
+                        <span class="d-flex" id="wish-count">0</span>
+                    </div>
+                    <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex" id="cart-count">0</span></a>
+                </div>
+                <div class="hamburger"><i class="bx bx-menu-alt-left"></i></div>
+            </div>
+            <!-- Cart items container -->
+            <div class="cart-items-container" id="cart-items-container" style="display: none;">
+                <h2>Cart Items</h2>
+                <div id="cart-items"></div>
+                <div>Total Amount: <span id="total-amount">$0.00</span></div>
+                <div class="cart-actions">
+                    <button id="close-cart" class="close-cart">Close</button>
+                    <button id="checkout" class="checkout">Checkout</button>
+                </div>
+            </div>
+            <!-- Wishlist items container -->
+            <div class="wishlist-items-container" id="wishlist-items-container" style="display: none;">
+                <h2>Wishlist Items</h2>
+                <div id="wishlist-items"></div>
+                <div class="wishlist-actions">
+                    <button id="close-wishlist" class="close-wishlist">Close</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="payment-container">
+        <div class="payment-left-panel">
+            <div class="payment-section payment-login">
+                <h3>1 LOGIN ✔</h3>
+                <div class="payment-details">
+                    <p>Sakthish S +91637563512</p>
+                    <a href="responsiveht.html"><button>CHANGE</button></a>
+                </div>
+            </div>
+            <div class="payment-section payment-address">
+                <h3>2 DELIVERY ADDRESS ✔</h3>
+                <div class="payment-details">
+                    <p>Sakthish 4/189, Maharaja Nagar, Meetu Kudi, Nesavalar Colony, Tirunelveli, Tamil Nadu - 627011</p>
+                    <a href="buynow.html"><button>CHANGE</button></a>
+                </div>
+            </div>
+            <div class="payment-section payment-summary">
+                <h3>3 ORDER SUMMARY ✔</h3>
+                <div class="payment-details">
+                    <p>1 Item</p>
+                    <a href="conform.html"><button>CHANGE</button></a>
+                </div>
+            </div>
+            <div class="payment-section payment-options">
+                <h3>4 PAYMENT OPTIONS</h3>
+                <p class="payment-timer">Complete payment in <span id="payment-timer">00:13:14</span></p>
+                <div class="payment-option">
+                    <input type="radio" id="payment-gpay1" name="payment-method" checked>
+                    <label for="payment-gpay1">Google Pay UPI sakthishduke@okicici</label>
+                    <p class="payment-saved-info">Saved from last payment. <a href="#">Know more.</a></p>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-gpay2" name="payment-method">
+                    <label for="payment-gpay2">Google Pay UPI anandvenkat06@okaxis</label>
+                    <p class="payment-saved-info">Saved from last payment. <a href="#">Know more.</a></p>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-phonepe" name="payment-method">
+                    <label for="payment-phonepe">PhonePe UPI 6374653512@axl</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-upi" name="payment-method">
+                    <label for="payment-upi">UPI</label>
+                    <p>Pay by any UPI app</p>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-wallet" name="payment-method">
+                    <label for="payment-wallet">Wallets</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-card" name="payment-method">
+                    <label for="payment-card">Credit / Debit / ATM Card</label>
+                    <p>Add and secure cards as per RBI guidelines</p>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-netbanking" name="payment-method">
+                    <label for="payment-netbanking">Net Banking</label>
+                    <p>This instrument has low success, use UPI or cards for better experience</p>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-cod" name="payment-method">
+                    <label for="payment-cod">Cash on Delivery</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="payment-emi" name="payment-method" disabled>
+                    <label for="payment-emi">EMI (Easy Installments)</label>
+                </div>
+                <div class="payment-add-gift-card">
+                    <a href="#">Add Gift Card</a>
+                </div>
+            </div>
+        </div>
+        <div class="payment-right-panel">
+            <div class="payment-price-details">
+                <h3>PRICE DETAILS</h3>
+                <p>Price (1 item) <span>₹499</span></p>
+                <p>Delivery Charges <span>FREE</span></p>
+                <p class="payment-total">Amount Payable <span>₹499</span></p>
+            </div>
+            <div class="payment-offers">
+                <p><strong>5% Cashback on Euphoria Axis Bank Card</strong></p>
+                <p>Get ₹50 Instant Discount on first Euphoria UPI transaction on order of ₹200 and above</p>
+            </div>
+            <div class="payment-security-info">
+                <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Need Help</h1></li>
+                        <li><p>Contact Us</p></li>
+                        <li><p>Track Order</p></li>
+                        <li><p>Returns & Refunds</p></li>
+                        <li><p>FAQ's</p></li>
+                        <li><p>Career</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Company</h1></li>
+                        <li><p>About Us</p></li>
+                        <li><p>euphoria Blog</p></li>
+                        <li><p>euphoriastan</p></li>
+                        <li><p>Collaboration</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>More Info</h1></li>
+                        <li><p>Term and Conditions</p></li>
+                        <li><p>Privacy Policy</p></li>
+                        <li><p>Shipping Policy</p></li>
+                        <li><p>Sitemap</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Location</h1></li>
+                        <li><p>support@euphoria.in</p></li>
+                        <li><p>Eklingpura Chouraha, Ahmedabad Main Road</p></li>
+                        <li><p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social-media">
+                <div class="social-icons">
+                    <a href="https://github.com/sakthi637"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Sakthish63?s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/s_akthi_z?igsh=dzc4N3diaTFqeG93"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sakthish-s-9a0089241"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-info">
+                    <h1>Download The App</h1>
+                    <div class="info-columns">
+                        <div class="info-column">
+                            <img src="bgs/ggl.png" alt="Image 1">
+                           
+                        </div>
+                        <div class="info-column">
+                            <img src="bgs/playstore.png" alt="Image 2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-category">
+                <select>
+                    <option value="category1">Popular Categories</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                    <option value="category4">Category 4</option>
+                </select>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+      </footer>
+
+    <script> 
+        // JavaScript to handle countdown timer for payment completion
+function startPaymentTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = "00:" + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    const paymentTimeLeft = 13 * 60 + 14; // 13 minutes and 14 seconds
+    const paymentDisplay = document.querySelector('#payment-timer');
+    startPaymentTimer(paymentTimeLeft, paymentDisplay);
+};
+
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

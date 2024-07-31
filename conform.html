@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navigation">
+            <div class="nav-center container d-flex">
+                <a href="/" class="logo"><img src="images/Logo.svg" alt="Logo"></a>
+                <ul class="nav-list d-flex">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="product.html" class="nav-link">Men</a></li>
+                    <li class="nav-item"><a href="women.html" class="nav-link">Women</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Combos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <div class="search-box">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                        <input type="text" id="search-input" placeholder="Search...">
+                    </div>
+                </ul>
+                <div class="icons d-flex">
+                    <a href="responsiveht.html" class="icon"><i class="bx bx-user"></i></a>
+                    <div class="icon">
+                        <i class="bx bx-heart wish-icon-header"></i>
+                        <span class="d-flex" id="wish-count">0</span>
+                    </div>
+                    <a href="#" class="icon"><i class="bx bx-cart"></i><span class="d-flex" id="cart-count">0</span></a>
+                </div>
+                <div class="hamburger"><i class="bx bx-menu-alt-left"></i></div>
+            </div>
+            <!-- Cart items container -->
+            <div class="cart-items-container" id="cart-items-container" style="display: none;">
+                <h2>Cart Items</h2>
+                <div id="cart-items"></div>
+                <div>Total Amount: <span id="total-amount">$0.00</span></div>
+                <div class="cart-actions">
+                    <button id="close-cart" class="close-cart">Close</button>
+                    <button id="checkout" class="checkout">Checkout</button>
+                </div>
+            </div>
+            <!-- Wishlist items container -->
+            <div class="wishlist-items-container" id="wishlist-items-container" style="display: none;">
+                <h2>Wishlist Items</h2>
+                <div id="wishlist-items"></div>
+                <div class="wishlist-actions">
+                    <button id="close-wishlist" class="close-wishlist">Close</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--  -->
+
+    <section class="conform-container">
+        <div class="conform-content">
+            <div class="conform-sections">
+                <div class="conform-section" id="conform-login">
+                    <div class="conform-section-header">
+                        <span>1</span>
+                        <h2>LOGIN</h2>
+                        <span class="conform-status">✔</span>
+                    </div>
+                    <div class="conform-section-content">
+                        <p>Sakthish S +916374563512</p>
+                        <a href="responsiveht.html"><button class="conform-change-btn">CHANGE</button></a>
+                    </div><br>
+                </div>
+                <div class="conform-section" id="conform-delivery-address">
+                    <div class="conform-section-header">
+                        <span>2</span>
+                        <h2>DELIVERY ADDRESS</h2>
+                        <span class="conform-status">✔</span>
+                    </div>
+                    <div class="conform-section-content">
+                        <p>Sakthish 4/189, Maharaja nagar, Meetu Kudi, Nesavalar colony, Tirunelveli, Tamil Nadu - 627011</p>
+                        <a href="buynow.html"><button class="conform-change-btn">CHANGE</button></a>
+                    </div><br>
+                </div>
+                <div class="conform-section" id="conform-order-summary">
+                    <div class="conform-section-header">
+                        <span>3</span>
+                        <h2>ORDER SUMMARY</h2>
+                    </div>
+                    <div class="conform-section-content">
+                        <div class="conform-order-item">
+                            <img src="images2/shirtmn1.jpeg" alt="Shirt">
+                            <div class="conform-item-details">
+                                <h3>Shivzata Men Self Design Casual White Shirt</h3>
+                                <p>Size: M</p><br>
+                                <p>Seller: Shivcreation62</p><br>
+                                <p>Delivery by Mon Aug 5 | Free</p><br>
+                                <div class="conform-item-price">
+                                    <p class="strike">₹1,999</p>
+                                    <p>₹499 <span>75% Off</span></p>
+                                    <p class="apply">2 offers applied ✔</p>
+                                </div><br>
+                                <div class="conform-quantity-control">
+                                    <button class="conform-quantity-btn" id="conform-decrease-quantity">-</button>
+                                    <span id="conform-quantity">1</span>
+                                    <button class="conform-quantity-btn" id="conform-increase-quantity">+</button>
+                                </div>
+                                <button class="conform-remove-btn">REMOVE</button>
+                            </div>
+                        </div><br>
+                        <p>Order confirmation email will be sent to sakthishduke@gmail.com</p>
+                    </div>
+                   <a href="payment.html"><button class="conform-continue-btn">CONTINUE</button></a> 
+                </div>
+            </div>
+            <div class="conform-price-details">
+                <h2>PRICE DETAILS</h2>
+                <div class="conform-price-row">
+                    <span>Price (1 item)</span>
+                    <span>₹499</span>
+                </div><br>
+                <div class="conform-price-row">
+                    <span>Delivery Charges</span>
+                    <span class="free">FREE</span>
+                </div>
+                <hr><br>
+                <div class="conform-price-row">
+                    <span class="totalpay">Total Payable</span>
+                    <span class="totalpay">₹499</span>
+                </div><br>
+                <hr>
+                <p class="ok">Your Total Savings on this order ₹1,500</p>
+                <div class="conform-promo">
+                    <h3>Euphoria Plus</h3>
+                    <p>Now for every ₹100 spent, Earn 4 SuperCoins</p>
+                    <p>Max 100 coins per order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Need Help</h1></li>
+                        <li><p>Contact Us</p></li>
+                        <li><p>Track Order</p></li>
+                        <li><p>Returns & Refunds</p></li>
+                        <li><p>FAQ's</p></li>
+                        <li><p>Career</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Company</h1></li>
+                        <li><p>About Us</p></li>
+                        <li><p>euphoria Blog</p></li>
+                        <li><p>euphoriastan</p></li>
+                        <li><p>Collaboration</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>More Info</h1></li>
+                        <li><p>Term and Conditions</p></li>
+                        <li><p>Privacy Policy</p></li>
+                        <li><p>Shipping Policy</p></li>
+                        <li><p>Sitemap</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Location</h1></li>
+                        <li><p>support@euphoria.in</p></li>
+                        <li><p>Eklingpura Chouraha, Ahmedabad Main Road</p></li>
+                        <li><p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social-media">
+                <div class="social-icons">
+                    <a href="https://github.com/sakthi637"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Sakthish63?s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/s_akthi_z?igsh=dzc4N3diaTFqeG93"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sakthish-s-9a0089241"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-info">
+                    <h1>Download The App</h1>
+                    <div class="info-columns">
+                        <div class="info-column">
+                            <img src="bgs/ggl.png" alt="Image 1">
+                           
+                        </div>
+                        <div class="info-column">
+                            <img src="bgs/playstore.png" alt="Image 2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-category">
+                <select>
+                    <option value="category1">Popular Categories</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                    <option value="category4">Category 4</option>
+                </select>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+      </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const decreaseBtn = document.getElementById('conform-decrease-quantity');
+    const increaseBtn = document.getElementById('conform-increase-quantity');
+    const quantityDisplay = document.getElementById('conform-quantity');
+    let quantity = 1;
+
+    decreaseBtn.addEventListener('click', () => {
+        if (quantity > 1) {
+            quantity--;
+            quantityDisplay.textContent = quantity;
+        }
+    });
+
+    increaseBtn.addEventListener('click', () => {
+        quantity++;
+        quantityDisplay.textContent = quantity;
+    });
+});
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
