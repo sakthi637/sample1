@@ -4507,6 +4507,7 @@ body {
 @media (max-width: 768px) {
   .conform-container {
     width: 100%;
+    margin-top: 10%;
   }
 
   .conform-section-header span {
@@ -4543,7 +4544,7 @@ body {
 
   .conform-container {
     
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .conform-section-header span {
     font-size: 14px;
@@ -4590,7 +4591,7 @@ body {
 @media (max-width: 360px) {
   .conform-container {
     
-    margin-top: 30%;
+    margin-top: 10%;
   }
 
   .conform-section-header span {
@@ -4822,6 +4823,7 @@ body {
   .payment-container {
     padding: 10px;
     margin-top: 15%;
+    width: 100%;
 }
 
 
@@ -4838,6 +4840,7 @@ body {
   .payment-container {
       padding: 10px;
       margin-top: 15%;
+      width: 100%;
   }
  
 
