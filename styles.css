@@ -4363,7 +4363,7 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
-  margin-top: -18px;
+  margin-top: -12px;
 }
 
 .conform-order-item {
@@ -4540,6 +4540,11 @@ body {
 }
 
 @media (max-width: 576px) {
+
+  .conform-container {
+    
+    margin-top: 10%;
+  }
   .conform-section-header span {
     font-size: 14px;
   }
@@ -4584,7 +4589,8 @@ body {
 
 @media (max-width: 360px) {
   .conform-container {
-    padding: 10px;
+    
+    margin-top: 30%;
   }
 
   .conform-section-header span {
@@ -4632,6 +4638,7 @@ body {
 
 /*  */
 
+
 .payment-container {
   width: 80%;
   margin: 0 auto;
@@ -4643,7 +4650,7 @@ body {
 }
 
 .payment-left-panel {
-  width: 65%;
+  width: 60%;
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ddd;
@@ -4812,6 +4819,12 @@ body {
 }
 
 @media (max-width: 576px) {
+  .payment-container {
+    padding: 10px;
+    margin-top: 15%;
+}
+
+
   h3 {
       font-size: 14px;
   }
@@ -4824,7 +4837,9 @@ body {
 @media (max-width: 360px) {
   .payment-container {
       padding: 10px;
+      margin-top: 15%;
   }
+ 
 
   h3 {
       font-size: 12px;
